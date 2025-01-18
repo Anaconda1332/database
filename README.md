@@ -3,7 +3,7 @@
 Логическая модель:  
 ![3f18f1b9-30e9-4270-b9d2-150aceab7610](https://github.com/user-attachments/assets/36d7022b-7d48-4965-9cf4-1211159044e7)  
 Вот некоторые SQL запросы:  
-'''SQL
+```SQL
 SELECT h.*  
 FROM  
   housings h  
@@ -13,7 +13,7 @@ WHERE
   a.city = 'New York'  
 ORDER BY  
   h.number_of_rooms DESC;  
-'''
+```
 ![image](https://github.com/user-attachments/assets/d9d4bb95-35d7-4b01-9de8-12c302927ca5)  
 
 SELECT h.*  
