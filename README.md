@@ -16,6 +16,7 @@ ORDER BY
 ```
 ![image](https://github.com/user-attachments/assets/d9d4bb95-35d7-4b01-9de8-12c302927ca5)  
 
+```SQL
 SELECT h.*  
 FROM  
   housings h  
@@ -23,9 +24,11 @@ JOIN
   reviews r ON h.housing_id = r.housing_id  
 GROUP BY  
   h.housing_id  
-HAVING AVG(r.grade) > 4;  
+HAVING AVG(r.grade) > 4;
+```
 ![image](https://github.com/user-attachments/assets/5fad8438-3ae9-45b7-bbbe-474606078908)  
 
+```SQL
 WITH city_avg_rating AS (  
   SELECT  
     a.city,  
@@ -49,7 +52,8 @@ SELECT
 FROM  
   city_avg_rating  
 ORDER BY  
-  avg_city_rating DESC, housing_rank_in_city;  
+  avg_city_rating DESC, housing_rank_in_city;
+```
 ![image](https://github.com/user-attachments/assets/f8d94136-8704-4859-ab69-20c5a17633b1)  
 
 
