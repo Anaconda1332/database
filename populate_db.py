@@ -6,7 +6,7 @@ import random
 from sqlalchemy.sql import text
 from datetime import timedelta
 
-DATABASE_URL = "postgresql://postgres:Dolphin20@localhost/airbnb"
+DATABASE_URL = "postgresql://postgres:........@localhost/airbnb"
 engine = create_engine(DATABASE_URL)
 
 Session = sessionmaker(bind=engine)
