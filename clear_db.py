@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from models import Base, User, Tenant, RentingPerson, PaymentMethod, Booking, Review, Housing, Address
 from sqlalchemy.sql import text
 
-DATABASE_URL = "postgresql://postgres:Dolphin20@localhost/airbnb"
+DATABASE_URL = "postgresql://postgres:-----@localhost/airbnb"
 engine = create_engine(DATABASE_URL)
 
 Session = sessionmaker(bind=engine)
